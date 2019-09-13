@@ -14,6 +14,10 @@ export class AppComponent implements OnInit  {
   constructor(private dataServer: DataserverService) {}
 
   ngOnInit() {
+    this.updateList();
+  }
+
+  updateList() {
     this.dataServer.getData().subscribe(lista => {
       this.listaUsuarios = lista;
     });
