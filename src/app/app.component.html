@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<div class="container">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let user of listaUsuarios">
+      <span>Nome:</span> {{user.nome}} 
+      <span>Idade:</span> {{user.idade}} 
+      <span>Registro:</span> {{user.id}} 
+    </li>
+  </ul>
+</div>
+<app-crud></app-crud>
